@@ -34,7 +34,18 @@ img {
 }
 
 @media (min-width: 960px) {
-  .header {
+  .container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+   
   }
+  .header {
+    grid-area: one;
+  }
+  .picture {
+    grid-area: two;
+  }
+
+  .container{
+    grid-template-areas: "one two"
 }
